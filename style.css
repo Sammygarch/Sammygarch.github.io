@@ -68,13 +68,13 @@ button {
     cursor: url(sun.cur), auto;
 }
 
-#welcome .light-mode button {
+.light-mode #welcome button {
     background-color: #007F6C;
     color: palegoldenrod;
     border:3px solid #007F6C;
 }
 
-#welcome .light-mode button:hover{
+.light-mode #welcome button:hover{
     background-color: palegoldenrod;
     color: #007F6C;
 }
@@ -118,13 +118,13 @@ button {
     color: aquamarine;
 }
 
-#welcome .dark-mode button {
+.dark-mode #welcome button {
     background-color: aquamarine;
     color: black;
     border:3px solid aquamarine;
 }
 
-#welcome .dark-mode button:hover{
+.dark-mode #welcome button:hover{
     background-color: black;
     color: aquamarine;
 }
@@ -280,11 +280,19 @@ ul.no-bullets {
     color: inherit;
 }
 
+#welcome {
+    min-height: 80vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #welcome h1{
-    font-size: 150px;
+    font-size: 10vw;
 }
 
 #welcome button {
-    padding: 40px 80px;
-    font-size: 40px;
+    padding: 3vw 6vw;
+    font-size: 3vw;
 }
