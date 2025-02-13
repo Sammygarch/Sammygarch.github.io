@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sammy Garcia CV</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="light-mode">
+        <div id="dark-mode-toggle">
+            <span>Toggle Dark Mode</span>
+            <input type="checkbox" id="toggle">
+            <label for="toggle" id="toggleLabel"></label>
+         </div>
+         
+         <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="#Start">Top</a>
+                <a href="#Summary">Summary</a>
+                <a href="#Experience">My Experience</a>
+                <a href="#Skills">My Skills</a>
+            </div>
+         </div>
+
+         
+         
+        <script>
+            const toggleSwitch = document.getElementById('toggle');
+            toggleSwitch.addEventListener('change', function () {
+                document.body.classList.toggle('dark-mode', this.checked);
+            });
+        </script>
+        
+        <main>
+            <h1 id="Start">Sammy Garcia</h1>
+            <p class="caption">Student at Yavneh College</p>
+            <hr class="divider">
+            <div class="details">
+                <a href="https://en.wikipedia.org/wiki/London">London</a> |
+                <a href="tel:+447877953045">+447877953045</a> |
+                <a href="mailto:s@mmygarcia.com">s@mmygarcia.com</a>
+            </div>
+            <hr class="divider">
+            <div>
+                <h2 id="Summary">Summary</h2>
+                <p>I am a highly motivated A level student currently studying Computer Science, Maths, Further Maths and Economics.  I consider myself to be a strong problem solver with an educational background in Python. Currently expanding my skills in web development, specifically focusing on HTML, CSS and JavaScript. I am eager to apply my skills and gain experience in the tech industry.</p>
+            </div>
+            <hr class="divider">
+            <h2 id="Experience">Experience</h2>
+            <hr class="divider">
+            <div >
+                <h3>Education</h3>
+                <ul class="no-bullets">
+                    <li>
+                        <h4>A levels | Yavneh College | September 2024 - Present</h4>
+                        <ul class="no-bullets">
+                            <li>Computer Science (Currently working at an A*)</li>
+                            <li>Mathematics (Currently working at an A*)</li>
+                            <li>Further Mathematics (Currently working at an A*)</li>
+                            <li>Economics (Currently working at an A)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>GCSEs | Yavneh College | September 2019 - June 2024</h4>
+                        <ul class="no-bullets">
+                            <li>Computer Science - 9</li>
+                            <li>Maths - 9</li>
+                            <li>Additional Maths FSMQ - A</li>
+                            <li>Physics - 8</li>
+                            <li>Chemistry - 8</li>
+                            <li>Biology - 8</li>
+                            <li>English - 8 (Language & Literature)</li>
+                            <li>Religious Studies - 8</li>
+                            <li>History - 7</li>
+                            <li>Geography - 7</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> 
+            <hr class="divider">
+            <div >
+                <h3>Work Experience</h3>
+                <ul  class="no-bullets">
+                    <li>
+                        <h4>Tutoring Maths & Computer Science | September 2024 - present</h4>
+                    </li>
+                </ul>
+            </div>
+            <hr class="divider">
+            <div >
+                <h3>Volunteering Experience</h3>
+                <ul  class="no-bullets">
+                    <li>
+                        <h4>Save A Child's Heart | Summer 2024</h4>
+                        <p>Spent time with children recovering from heart surgeries in summer 2024</p>
+                    </li>
+                </ul>
+            </div>
+            <hr class="divider"> 
+            <div >
+                <h3>Other Experience</h3>
+                <ul  class="no-bullets">
+                    <li>
+                        <h4>Start Up Leadership course</h4>
+                        <p>Led a team in a year long course aimed at creating a solution for a world problem</p>
+                    </li>
+                    <li>
+                        <h4>Debating course</h4>
+                        <p>4 week course developing and improving articulation, public speaking and debating skills</p>
+                    </li>
+                </ul>
+            </div>
+            <hr class="divider">
+            <h2 id="Skills">Skills</h2>
+            <ul class="no-bullets">
+                <li>Python</li>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Problem Solving</li>
+                <li>Communication</li>
+                <li>Microsoft Office</li>
+            </ul>
+            <hr class="divider">
+
+            <input type="button" value="Download Printable CV" onclick="window.location.href='SammyGarciaCV.pdf';" target="_blank" />
+        </main>
+    </body>
+</html>
