@@ -26,6 +26,10 @@
          
          
         <script>
+            if (localStorage.getItem('dark-mode') === 'true') {
+                document.body.classList.add('dark-mode');
+                document.getElementById('toggle').checked = true;
+            }
             const toggleSwitch = document.getElementById('toggle');
             toggleSwitch.addEventListener('change', function () {
                 document.body.classList.toggle('dark-mode', this.checked);

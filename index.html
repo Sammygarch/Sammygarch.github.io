@@ -16,6 +16,7 @@
         <script>
             const toggleSwitch = document.getElementById('toggle');
             toggleSwitch.addEventListener('change', function () {
+                localStorage.setItem('dark-mode', this.checked);
                 document.body.classList.toggle('dark-mode', this.checked);
             });
         </script>
