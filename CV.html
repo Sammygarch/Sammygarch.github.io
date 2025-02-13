@@ -26,12 +26,14 @@
          
          
         <script>
-            if (localStorage.getItem('dark-mode') === 'true') {
-                document.body.classList.add('dark-mode');
-                document.getElementById('toggle').checked = true;
-            }
+            document.addEventListener('DOMContentLoaded', function () {
+            const darkMode = localStorage.getItem('darkMode') === 'true';
+            document.body.classList.toggle('dark-mode', darkMode);
+            document.getElementById('toggle').checked = darkMode;
+            });
             const toggleSwitch = document.getElementById('toggle');
             toggleSwitch.addEventListener('change', function () {
+                localStorage.setItem('darkMode', this.checked);
                 document.body.classList.toggle('dark-mode', this.checked);
             });
         </script>
