@@ -291,10 +291,50 @@ ul.no-bullets {
 }
 
 #welcome h1{
-    font-size: 10vw;
+    font-size: 200px;
 }
 
 #welcome button {
-    padding: 3vw 6vw;
-    font-size: 3vw;
+    padding: 20px 40px;
+    font-size: 30px;
+}
+
+@media (max-width:900px) {
+    #toggleLabel {
+        left: -30%;
+        top: 1%;
+        position: absolute;
+    }
+
+    #dark-mode-toggle {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+    }
+
+    #welcome h1 {
+        font-size: 20vw;
+    }
+
+    
+    .divider {
+        width: 80%;
+    }
+    .dropdown {
+        display: none;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    h1,h2,h3,h4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        top: 30px;
+    }
 }
