@@ -34,6 +34,10 @@ button {
         border-color: #007F6C;
 }
 
+.light-mode .divider {
+    color: #007F6C;
+}
+
 .light-mode .dropdown-content {
     background-color: #007F6C;
     color: palegoldenrod; 
@@ -84,6 +88,10 @@ button {
     background-color: rgb(10, 10, 10);
     color: aquamarine;
     border-color: aquamarine;
+}
+
+.dark-mode .divider {
+    color: aquamarine;
 }
 
 .dark-mode #toggleLabel {
@@ -157,7 +165,6 @@ h4 {
 .divider {
     height: 0px;
     width: 30%;
-    color: inherit;
     margin-top: 10px;
 }
 
