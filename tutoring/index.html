@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tutoring | Sammy Garcia</title>
+        <meta name="description" content="Maths, Further Maths and Computer Science tutoring, primary to A level. Online in term time, in person in Borehamwood during university holidays.">
+        <link rel="stylesheet" href="../style.css">
+        <style>
+            /* Page-specific only. style.css is untouched. */
+            p {
+                margin-bottom: 16px;
+            }
+
+            .cta {
+                padding: 18px 34px;
+                font-size: 22px;
+                margin-top: 10px;
+                margin-bottom: 6px;
+            }
+
+            .hero {
+                min-height: 70vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .quote {
+                width: 55%;
+                margin: 0 auto;
+                font-style: italic;
+            }
+
+            .quote-source {
+                font-style: normal;
+                opacity: 0.8;
+                margin-top: 6px;
+            }
+
+            .form-wrap {
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            .form-wrap iframe {
+                width: 100%;
+                height: 620px;
+                border: 2px solid;
+                border-color: inherit;
+            }
+
+            .backlink {
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+
+            .backlink a {
+                color: inherit;
+            }
+
+            @media (max-width: 900px) {
+                .quote,
+                .form-wrap {
+                    width: 100%;
+                }
+
+                .cta {
+                    font-size: 19px;
+                    padding: 16px 24px;
+                }
+
+                .hero {
+                    min-height: 78vh;
+                }
+            }
+        </style>
+    </head>
+    <body class="light-mode">
+
+        <div id="dark-mode-toggle">
+            <span>Toggle Dark Mode</span>
+            <input type="checkbox" id="toggle">
+            <label for="toggle" id="toggleLabel"></label>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const darkMode = localStorage.getItem('darkMode') === 'true';
+                document.body.classList.toggle('dark-mode', darkMode);
+                document.getElementById('toggle').checked = darkMode;
+            });
+
+            const toggleSwitch = document.getElementById('toggle');
+            toggleSwitch.addEventListener('change', function () {
+                localStorage.setItem('darkMode', this.checked);
+                document.body.classList.toggle('dark-mode', this.checked);
+            });
+        </script>
+
+        <main>
+
+            <div class="hero">
+                <h1 id="Start">Tutoring</h1>
+                <p class="caption">Maths, Further Maths and Computer Science</p>
+                <hr class="divider">
+                <h4>Primary to A level. Online in term time, in person in Borehamwood during university holidays.</h4>
+
+                <!-- SWAP THIS NUMBER when the WhatsApp Business eSIM is live -->
+                <input type="button" class="cta" value="Message me on WhatsApp"
+                    onclick="window.open('https://wa.me/447877953045?text=Hi%20Sammy%2C%20I%20saw%20your%20website.%20I%27d%20like%20to%20ask%20about%20tutoring%20for%20', '_blank', 'noopener');">
+
+                <p class="caption">Or use the enquiry form further down the page.</p>
+            </div>
+
+            <hr class="divider">
+
+            <h2 id="Subjects">What I cover</h2>
+            <ul class="no-bullets">
+                <li class="bordered">Maths: primary, KS3, GCSE and A level</li>
+                <li class="bordered">Further Maths: A level</li>
+                <li class="bordered">Computer Science: GCSE and A level</li>
+                <li class="bordered">Python: beginners through to coursework and project work</li>
+            </ul>
+
+            <hr class="divider">
+
+            <h2 id="How">How it works</h2>
+            <ul class="no-bullets">
+                <li>One hour sessions, booked in advance</li>
+                <li>Online during term time</li>
+                <li>In person in Borehamwood during university holidays</li>
+                <li>Every session ends with a short set of practice for the week</li>
+                <li>Single sessions or blocks of five or ten</li>
+            </ul>
+
+            <hr class="divider">
+
+            <h2 id="About">About me</h2>
+            <p>I have been tutoring since 2024, from primary maths up to A level. I finished school with A*AAA at A level, including an A* in Maths and As in Further Maths and Computer Science, and I am starting a Computer Science degree at Durham University this autumn.</p>
+            <p>I teach the way I learned: work out what is actually going wrong, fix the understanding, then practise it until it holds under exam pressure.</p>
+
+            <hr class="divider">
+
+            <h2 id="Reviews">What parents say</h2>
+
+            <!-- REPLACE with Dal's Superprof review, word for word. Delete this block if you would rather launch without it. -->
+            <div class="quote">
+                <p>[Testimonial goes here.]</p>
+                <p class="quote-source">[Name], [subject and year group]</p>
+            </div>
+
+            <hr class="divider">
+
+            <h2 id="Enquire">Make an enquiry</h2>
+            <p>Tell me the year group, the subject and what you are hoping to fix. I will reply with availability.</p>
+
+            <div class="form-wrap">
+                <!-- REPLACE src with the Notion form share link. Until then this iframe shows nothing. -->
+                <iframe src="NOTION_FORM_URL_HERE" title="Tutoring enquiry form" loading="lazy"></iframe>
+            </div>
+
+            <hr class="divider">
+
+            <div class="backlink">
+                <a href="../CV.html">See my CV</a>
+            </div>
+
+        </main>
+    </body>
+</html>
