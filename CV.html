@@ -4,28 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sammy Garcia CV</title>
+        <meta name="description" content="CV of Sammy Garcia, incoming BSc Computer Science student at Durham University. Private maths and computer science tutor, A*AAA at A-level.">
+        <meta property="og:title" content="Sammy Garcia CV">
+        <meta property="og:description" content="Incoming BSc Computer Science student at Durham University. Private maths and computer science tutor, A*AAA at A-level.">
+        <meta property="og:type" content="profile">
+        <meta property="og:url" content="https://sammygarcia.co.uk/">
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="light-mode">
         <div id="dark-mode-toggle">
             <span>Toggle Dark Mode</span>
-            <input type="checkbox" id="toggle">
+            <input type="checkbox" id="toggle" aria-label="Toggle dark mode">
             <label for="toggle" id="toggleLabel"></label>
          </div>
-         
+
          <div class="dropdown">
             <button class="dropbtn">Menu</button>
             <div class="dropdown-content">
                 <a href="#Start">Top</a>
                 <a href="#Summary">Summary</a>
                 <a href="#Experience">My Experience</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Leadership">Leadership</a>
                 <a href="#Skills">My Skills</a>
                 <a href="#Print">Printable</a>
             </div>
          </div>
 
-         
-         
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const darkMode = localStorage.getItem('darkMode') === 'true';
@@ -34,43 +39,46 @@
             });
 
             const toggleSwitch = document.getElementById('toggle');
-            toggleSwitch.addEventListener('change',  function () {
+            toggleSwitch.addEventListener('change', function () {
                 localStorage.setItem('darkMode', this.checked);
                 document.body.classList.toggle('dark-mode', this.checked);
             });
         </script>
-        
+
         <main>
             <h1 id="Start">Sammy Garcia</h1>
-            <p class="caption">Student at Yavneh College</p>
+            <p class="caption">Incoming BSc Computer Science student, Durham University</p>
             <hr class="divider">
             <div class="details">
-                <a href="https://en.wikipedia.org/wiki/London">London</a> |
-                <a href="tel:+447877953045">+447877953045</a> |
+                London |
+                <a href="tel:+447877953045">+44 7877 953045</a> |
                 <a href="mailto:s@mmygarcia.com">s@mmygarcia.com</a>
             </div>
             <hr class="divider">
             <div>
                 <h2 id="Summary">Summary</h2>
-                <p>I am a highly motivated A level student currently studying Computer Science, Maths, Further Maths and Economics.  I consider myself to be a strong problem solver with an educational background in Python. Currently expanding my skills in web development, specifically focusing on HTML, CSS and JavaScript. I am eager to apply my skills and gain experience in the tech industry.</p>
+                <p>Incoming BSc Computer Science student at Durham University, holding A*AAA at A-level including A* Mathematics. Two years running a private tutoring practice teaching Mathematics and Computer Science to students aged 4 to 16, built entirely on referral, alongside a software development internship in fintech. Comfortable explaining technical material to people at very different levels, and used to running the commercial side of the work as well as the teaching.</p>
             </div>
             <hr class="divider">
             <h2 id="Experience">Experience</h2>
             <hr class="divider">
-            <div >
+            <div>
                 <h3>Education</h3>
                 <ul class="no-bullets">
                     <li>
-                        <h4>A levels | Yavneh College | September 2024 - Present</h4>
+                        <h4>BSc Computer Science | Durham University, Van Mildert College | October 2026 - June 2029</h4>
+                    </li>
+                    <li>
+                        <h4>A levels | Yavneh College | September 2024 - June 2026</h4>
                         <ul class="no-bullets">
-                            <li>Computer Science (Currently working at an A*)</li>
-                            <li>Mathematics (Currently working at an A*)</li>
-                            <li>Further Mathematics (Currently working at an A*)</li>
-                            <li>Economics (Currently working at an A)</li>
+                            <li>Mathematics - A*</li>
+                            <li>Further Mathematics - A</li>
+                            <li>Computer Science - A</li>
+                            <li>Economics - A</li>
                         </ul>
                     </li>
                     <li>
-                        <h4>GCSEs | Yavneh College | September 2019 - June 2024</h4>
+                        <h4>GCSEs | Yavneh College | September 2021 - June 2024</h4>
                         <ul class="no-bullets">
                             <li>Computer Science - 9</li>
                             <li>Maths - 9</li>
@@ -78,44 +86,75 @@
                             <li>Physics - 8</li>
                             <li>Chemistry - 8</li>
                             <li>Biology - 8</li>
-                            <li>English - 8 (Language & Literature)</li>
+                            <li>English - 8 (Language &amp; Literature)</li>
                             <li>Religious Studies - 8</li>
                             <li>History - 7</li>
                             <li>Geography - 7</li>
                         </ul>
                     </li>
                 </ul>
-            </div> 
+            </div>
             <hr class="divider">
-            <div >
+            <div>
                 <h3>Work Experience</h3>
-                <ul  class="no-bullets">
+                <ul class="no-bullets">
                     <li>
-                        <h4>Tutoring Maths & Computer Science | September 2024 - present</h4>
+                        <h4>Private Tutor, self-employed | September 2024 - present</h4>
+                        <p>Teach Mathematics, Computer Science and Python to students aged 4 to 16, in person across Borehamwood, Elstree and north London, and online. Built the entire client base through referral and word of mouth with no paid advertising, with the longest client relationship running to over 17 months of continuous weekly sessions. Run the business end to end: pricing, scheduling, invoicing, parent communication and session records, using a custom relational database system built in Notion.</p>
+                    </li>
+                    <li>
+                        <h4>Software Development Intern | Credit Data Research | July 2025</h4>
+                        <p>Audited the company's corporate web platform and reported findings to the team. Delivered recommendations on web architecture and user experience, working in an open banking and credit data environment.</p>
                     </li>
                 </ul>
             </div>
             <hr class="divider">
-            <div >
-                <h3>Volunteering Experience</h3>
-                <ul  class="no-bullets">
+            <div>
+                <h3 id="Projects">Projects</h3>
+                <ul class="no-bullets">
                     <li>
-                        <h4>Save A Child's Heart | Summer 2024</h4>
-                        <p>Spent time with children recovering from heart surgeries in summer 2024</p>
+                        <h4>Weather Application | 2025 - 2026</h4>
+                        <p>Full stack A-level Computer Science coursework project built independently. JavaScript front end with HTML and CSS, consuming live forecast data from the OpenWeather API, backed by a SQL database. Taken from requirements analysis through design and implementation to testing and a written technical report.</p>
+                    </li>
+                    <li>
+                        <h4>sammygarcia.co.uk</h4>
+                        <p>This site. Hand written in HTML, CSS and JavaScript with no framework or site builder.</p>
                     </li>
                 </ul>
             </div>
-            <hr class="divider"> 
-            <div >
-                <h3>Other Experience</h3>
-                <ul  class="no-bullets">
+            <hr class="divider">
+            <div>
+                <h3 id="Leadership">Leadership</h3>
+                <ul class="no-bullets">
                     <li>
-                        <h4>Start Up Leadership course</h4>
-                        <p>Led a team in a year long course aimed at creating a solution for a world problem</p>
+                        <h4>School Chess Team Captain | 2024 - present</h4>
+                        <p>Lead the school team at inter-school tournaments.</p>
                     </li>
                     <li>
-                        <h4>Debating course</h4>
-                        <p>4 week course developing and improving articulation, public speaking and debating skills</p>
+                        <h4>Start Up Leadership course | 2024</h4>
+                        <p>Led a cross functional team through a year long course developing a product concept to counter digital misinformation, applying lean startup and user centred design methods.</p>
+                    </li>
+                    <li>
+                        <h4>Debating course | November 2024</h4>
+                        <p>4 week course developing and improving articulation, public speaking and debating skills.</p>
+                    </li>
+                </ul>
+            </div>
+            <hr class="divider">
+            <div>
+                <h3>Volunteering Experience</h3>
+                <ul class="no-bullets">
+                    <li>
+                        <h4>Save A Child's Heart | July 2024</h4>
+                        <p>Spent time with children recovering from heart surgery, supporting them through their hospital stay.</p>
+                    </li>
+                    <li>
+                        <h4>Community projects | August 2025</h4>
+                        <p>Built outdoor furniture for underserved communities and packed nutritional supplies for distribution to families in need.</p>
+                    </li>
+                    <li>
+                        <h4>Communities 1st | July 2023</h4>
+                        <p>Helped create welcome packs for incoming NHS workers relocating to the UK.</p>
                     </li>
                 </ul>
             </div>
@@ -123,15 +162,17 @@
             <h2 id="Skills">Skills</h2>
             <ul class="no-bullets">
                 <li>Python</li>
-                <li>HTML & CSS</li>
                 <li>JavaScript</li>
+                <li>SQL</li>
+                <li>HTML &amp; CSS</li>
+                <li>Database design</li>
+                <li>Algorithm design</li>
                 <li>Problem Solving</li>
                 <li>Communication</li>
-                <li>Microsoft Office</li>
             </ul>
             <hr class="divider">
 
-            <input type="button" id="Print" value="Download Printable CV" onclick="window.location.href='SammyGarciaCV.pdf';" target="_blank" />
+            <input type="button" id="Print" value="Download Printable CV" onclick="window.open('SammyGarciaCV.pdf', '_blank');">
         </main>
     </body>
 </html>
